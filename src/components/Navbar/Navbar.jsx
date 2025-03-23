@@ -1,11 +1,16 @@
-import React from 'react'
+import React, { useState } from 'react';
+import styles from './Navbar.module.css';
+import { getImageUrl } from '../../utils';
+
+
+
 
 const Navbar = () => {
   return (
-    <nav>
-        <a href="/">Tanmay</a>
-        <div>
-        <ul>
+    <nav className={styles.navbar}>
+        <a className={styles.title} href="/">Tanmay</a>
+        <div className={styles.menu}>
+        <ul className={styles.menuItems}>
             <li>
                 <a href="#About">About</a>
             </li>
